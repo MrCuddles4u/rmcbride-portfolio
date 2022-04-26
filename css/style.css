@@ -17,7 +17,7 @@
 
     /* Color Palette! */
     --clr-dark: #303030;
-    --clr-dark-mid: #43524B;
+    --clr-dark-mid: #76c19e;
     --clr-mid: #517664;
     --clr-light: #76AD93;
     --clr-accent: #9FD8CB;
@@ -468,4 +468,27 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 460px) {
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-row-gap: .2em;
+    }
+
+    .portfolio-item-individual {
+        margin: 0;
+        padding: 0;
+        margin-left: 1%;
+    }
+
+    .portfolio-item-individual p {
+        
+        max-width: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
